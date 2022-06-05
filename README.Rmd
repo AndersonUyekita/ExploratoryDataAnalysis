@@ -1,0 +1,69 @@
+---
+title: 'Exploratory Data Analysis'
+author: '`r if(knitr::is_html_output()) {"&#x1f468;&#x1F3FB;&#x200d;&#x1f4bb; Anderson H Uyekita"} else {NULL}`'
+output:
+  github_document: default
+params:
+  author: "Anderson H Uyekita"
+  course: "Exploratory Data Analysis"
+  course_url: "https://www.coursera.org/learn/exploratory-data-analysis"
+  specialization: "Data Science: Foundations using R Specialization"
+  specialization_url: "https://www.coursera.org/specializations/data-science-foundations-r"
+  instructor: "Roger D Peng"
+  course_start: !r lubridate::ymd("2022/05/20")
+  course_finish: !r lubridate::today()
+  certificate_url: "./"
+  page: ""
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,cache=TRUE,message=FALSE,warning=FALSE)
+library(rmarkdown)
+library(lubridate)
+```
+
+* `r if(!knitr::is_html_output()) {sprintf(fmt = "&#x1f468;&#x1F3FB;&#x200d;&#x1f4bb; Author: %s", params$author)}`
+* `r sprintf(fmt = "&#x1f4da; Specialization: [%s](%s){target='_blank' rel='noopener'}", params$specialization, params$specialization_url)`
+* `r sprintf(fmt = "&#x1f4d6; Course: [%s](%s){target='_blank' rel='noopener'}", params$course, params$course_url)`
+    * `r sprintf(fmt = "&#x1F9D1;&#x200d;&#x1F3EB; Instructor: %s", params$instructor)`
+    * `r sprintf(fmt = "&#x1F6A6; Start: %s", format(params$course_start, "%A, %d %B %Y"))`
+    * `r sprintf(fmt = "&#x1F3C1; Finish: %s", format(params$course_finish, "%A, %d %B %Y"))`
+* `r sprintf(fmt = "&#x1F393; [Certificate](%s)", params$certificate_url)`
+
+--------------------------------------------------------------------------------
+
+#### Assignments & Deliverables
+
+* [&#x1F680; Course Project Repository 1](https://github.com/AndersonUyekita/exploratory-data-analysis_course-project-1)
+* [&#x1F4DD; Quiz 1](./Week%201/quiz-1_exploratory-data-analysis.md)
+* [&#x1F4DD; Quiz 2](./Week%203/quiz-2_exploratory-data-analysis.md)
+* [&#x1F4DD; Quiz 3](./Week%204/quiz-3_exploratory-data-analysis.md)
+
+--------------------------------------------------------------------------------
+
+#### Class Notes
+
+* [&#x1F4C6; Week 1](./Week%201/README.md)
+* [&#x1F4C6; Week 2](./Week%202/README.md)
+* [&#x1F4C6; Week 3](./Week%203/README.md)
+* [&#x1F4C6; Week 4](./Week%204/README.md)
+* [&#x1F4D1; Course Textbook Notes](./book/README.md)
+
+--------------------------------------------------------------------------------
+
+#### Course Description
+
+> This course covers the essential exploratory techniques for summarizing data. These techniques are typically applied before formal modeling commences and can help inform the development of more complex statistical models. Exploratory techniques are also important for eliminating or sharpening potential hypotheses about the world that can be addressed by the data. We cover in detail the plotting systems in R as well as some of the basic principles of constructing data graphics. We also cover some of the common multivariate statistical techniques used to visualize high-dimensional data.
+
+#### Course Syllabus
+
+* Making exploratory graphs
+* Principles of analytic graphics
+* Plotting systems and graphics devices in R
+* The base, lattice, and ggplot2 plotting systems in R
+* Clustering methods
+* Dimension reduction techniques
+
+#### Course Textbook
+
+The book [&#x1F4D4; Exploratory Data Analysis with R](./book/exploratory-data-analysis-with-r.pdf) covers the lecture material in this course.
