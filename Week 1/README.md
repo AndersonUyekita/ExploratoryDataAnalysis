@@ -24,7 +24,7 @@
     -   Graphics Devices in R
     -   Plotting Systems
     -   Base Plotting System
--   [📝 Quiz 1](./quiz-1_getting-and-cleaning-data.md)
+-   [📝 Quiz 1](./quiz-1_exploratory-data-analysis.md)
 
 ------------------------------------------------------------------------
 

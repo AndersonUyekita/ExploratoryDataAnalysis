@@ -43,7 +43,7 @@ library(lubridate)
     * Graphics Devices in R
     * Plotting Systems
     * Base Plotting System
-* [&#x1F4DD; Quiz 1](./quiz-1_getting-and-cleaning-data.md)
+* [&#x1F4DD; Quiz 1](./quiz-1_exploratory-data-analysis.md)
 
 --------------------------------------------------------------------------------
 
