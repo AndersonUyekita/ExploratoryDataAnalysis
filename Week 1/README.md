@@ -43,9 +43,9 @@
 
 ------------------------------------------------------------------------
 
-### Class Notes
+## Class Notes
 
-#### [<kbd>Lesson 1</kbd>](#graphs) Principles of Analytic Graphics
+### [<kbd>Lesson 1</kbd>](#graphs) Principles of Analytic Graphics
 
 **Summary**
 
@@ -81,7 +81,7 @@
     > -   Analytical presentations ultimately stand or fall depending on
     >     the quality, relevance, and integrity of their content
 
-#### [<kbd>Lesson 1</kbd>](#graphs) Exploratory Graphs
+### [<kbd>Lesson 1</kbd>](#graphs) Exploratory Graphs
 
 > -   To understand data properties
 > -   To find patterns in data
@@ -108,7 +108,7 @@ Characteristics of exploratory graphs:
 > -   Explore basic questions and hypotheses (and perhaps rule them out)
 > -   Suggest modeling strategies for the “next step”
 
-#### [<kbd>Lesson 2</kbd>](#plotting) Plotting Systems in R
+### [<kbd>Lesson 2</kbd>](#plotting) Plotting Systems in R
 
 **Summary**
 
@@ -151,7 +151,50 @@ There are three basic ways to plot a graph in R.
     > -   Default mode makes many choices for you (but you can still
     >     customize to your heart’s desire)
 
-#### [<kbd>Lesson 2</kbd>](#plotting) Base Plotting System
+### [<kbd>Lesson 2</kbd>](#plotting) Base Plotting System in R
+
+Some Important Base Graphics Parameters Some Important Base Graphics
+Parameters
+
+-   `pch`: the plotting symbol (default is open circle)
+-   `lty`: the line type (default is solid line), can be dashed, dotted,
+    etc.
+-   `lwd`: the line width, specified as an integer multiple
+-   `col`: the plotting color, specified as a number, string, or hex
+    code; the colors() function gives
+-   `you` a vector of colors by name
+-   `xlab`: character string for the x-axis label
+-   `ylab`: character string for the y-axis label
+
+The par() function is used to specify global graphics parameters
+
+-   `las`: the orientation of the axis labels on the plot
+-   `bg`: the background color
+-   `mar`: the margin size
+-   `oma`: the outer margin size (default is 0 for all sides)
+-   `mfrow`: number of plots per row, column (plots are filled row-wise)
+-   `mfcol`: number of plots per row, column (plots are filled
+    column-wise)
+
+``` r
+# Loading toy datasets.
+library(datasets)
+
+# Defining global parameters
+par(mfrow = c(1, 3),      # c("number of rows", "number of columns")
+    mar = c(4, 4, 2, 1),  # c(bottom, left, top, right)
+    oma = c(0, 0, 2, 0))  # c(bottom, left, top, right)
+
+# Simple plot as example.
+with(airquality, {
+    plot(Wind, Ozone, main = "Ozone and Wind")
+    plot(Solar.R, Ozone, main = "Ozone and Solar Radiation")
+    plot(Temp, Ozone, main = "Ozone and Temperature")
+    mtext("Ozone and Weather in New York City", outer = TRUE)
+})
+```
+
+![](README_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
 
 **Summary**
 
@@ -163,7 +206,46 @@ There are three basic ways to plot a graph in R.
 > -   The base plotting system is very flexible and offers a high degree
 >     of control over plotting
 
-#### [<kbd>Lesson 3</kbd>](#graphics_devices) Graphics Devices in R
+### [<kbd>Lesson 3</kbd>](#graphics_devices) Graphics Devices in R
+
+Display a plot in the R viewer panel.
+
+``` r
+# Step 1 - Loading datasets to use mtcars.
+library(datasets)
+
+# Step 2 - Creating a Graph
+with(mtcars, plot(wt, mpg)) # This is an alternative to:
+                            # plot(mtcars$wt, mtcars$mpg)
+
+# Step 3 - Adding notations
+title(main = "Miles Per Gallon vs. Cars' Weight")
+```
+
+![](README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+
+Exporting the graph into an external file called `myplot.pdf`, and
+storing in the data folder.
+
+``` r
+# Open PDF device to create the file and store it in the data folder.
+grDevices::pdf(file = "./data/myplot.pdf")
+
+# Previous graph example here.
+with(mtcars, plot(wt, mpg))
+title(main = "Miles Per Gallon vs. Cars' Weight")
+
+# Closing the device
+dev.off()
+```
+
+    ## png 
+    ##   2
+
+There are two basic types of file devices: vector and bitmap devices
+
+-   Vector formats: `pdf`, `svg`, `win.metafile`, and `postscript`, and;
+-   Bitmap formats: `png`, `jpeg`, `tiff`, and `bmp`.
 
 **Summary**
 
