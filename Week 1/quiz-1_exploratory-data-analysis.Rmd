@@ -1,5 +1,5 @@
 ---
-title: '`Question 1` Exploratory Data Analysis'
+title: '`Quiz 1` Exploratory Data Analysis'
 author: '`r if(knitr::is_html_output()) {"&#x1f468;&#x1F3FB;&#x200d;&#x1f4bb; Anderson H Uyekita"} else {NULL}`'
 output:
   github_document: default

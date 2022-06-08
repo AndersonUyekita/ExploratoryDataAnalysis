@@ -1,4 +1,4 @@
-`Question 1` Exploratory Data Analysis
+`Quiz 1` Exploratory Data Analysis
 ================
 
 -   👨🏻‍💻 Author: Anderson H Uyekita
