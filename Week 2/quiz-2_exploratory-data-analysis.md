@@ -14,7 +14,7 @@
     -   🚦 Start: Tuesday, 07 June 2022
     -   🏁 Finish: Wednesday, 08 June 2022
 -   🌎 Rpubs: [Interactive
-    Document](https://rpubs.com/AndersonUyekita/quiz-1_exploratory-data-analysis)
+    Document](https://rpubs.com/AndersonUyekita/quiz-2_exploratory-data-analysis)
 
 ------------------------------------------------------------------------
 

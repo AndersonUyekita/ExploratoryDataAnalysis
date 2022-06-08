@@ -2,13 +2,13 @@
 title: '`Quiz 2` Exploratory Data Analysis'
 author: '`r if(knitr::is_html_output()) {"&#x1f468;&#x1F3FB;&#x200d;&#x1f4bb; Anderson H Uyekita"} else {NULL}`'
 output:
-  github_document: default
   html_document:
     toc: true
     toc_depth: 4
     toc_float:
       collapsed: false
       smooth_scroll: true
+  github_document: default
 params:
   author: "Anderson H Uyekita"
   course: "Exploratory Data Analysis"
@@ -18,7 +18,7 @@ params:
   instructor: "Roger D Peng"
   week: "Week 2"
   course_start: !r lubridate::ymd("2022/06/07")
-  course_finish: !r lubridate::today()
+  course_finish: !r lubridate::ymd("2022/06/08")
   slug_relative: 'https://github.com/AndersonUyekita/exploratory-data-analysis/'
   slug_chapter: 'Week%202/'
   lesson_1: '2_1_plotting-lattice.pdf'
@@ -47,7 +47,7 @@ library(ggplot2movies)
 `r sprintf(fmt = "* &#x1F4C6; %s", params$week)`
     `r sprintf(fmt = "* &#x1F6A6; Start: %s", format(params$course_start, "%A, %d %B %Y"))`
     `r sprintf(fmt = "* &#x1F3C1; Finish: %s", format(params$course_finish, "%A, %d %B %Y"))`
-* `r if(!knitr::is_html_output()) {"&#x1F30E; Rpubs: [Interactive Document](https://rpubs.com/AndersonUyekita/quiz-1_exploratory-data-analysis)"}else{"&#x1F4E6; Github Repository: [Static Document](https://github.com/AndersonUyekita/getting-and-cleaning-data/blob/main/Week%201/quiz-1_exploratory-data-analysis.md){target='_blank' rel='noopener'}"}`
+* `r if(!knitr::is_html_output()) {"&#x1F30E; Rpubs: [Interactive Document](https://rpubs.com/AndersonUyekita/quiz-2_exploratory-data-analysis)"}else{"&#x1F4E6; Github Repository: [Static Document](https://github.com/AndersonUyekita/getting-and-cleaning-data/blob/main/Week%201/quiz-2_exploratory-data-analysis.md){target='_blank' rel='noopener'}"}`
 
 --------------------------------------------------------------------------------
 
