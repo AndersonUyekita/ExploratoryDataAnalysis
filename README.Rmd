@@ -34,9 +34,9 @@ library(lubridate)
 
 #### Assignments & Deliverables
 
-* [&#x1F680; Course Project Repository 1](https://github.com/AndersonUyekita/exploratory-data-analysis_course-project-1)
+* [&#x1F680; Course Project 1 Repository](https://github.com/AndersonUyekita/exploratory-data-analysis_course-project-1)
 * [&#x1F4DD; Quiz 1](./Week%201/quiz-1_exploratory-data-analysis.md)
-* [&#x1F4DD; Quiz 2](./Week%203/quiz-2_exploratory-data-analysis.md)
+* [&#x1F4DD; Quiz 2](./Week%202/quiz-2_exploratory-data-analysis.md)
 * [&#x1F4DD; Quiz 3](./Week%204/quiz-3_exploratory-data-analysis.md)
 
 --------------------------------------------------------------------------------

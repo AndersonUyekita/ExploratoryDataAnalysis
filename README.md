@@ -11,17 +11,17 @@ Exploratory Data Analysis
     target="_blank" rel="noopener">Exploratory Data Analysis</a>
     -   🧑‍🏫 Instructor: Roger D Peng
     -   🚦 Start: Friday, 20 May 2022
-    -   🏁 Finish: Sunday, 05 June 2022
+    -   🏁 Finish: Wednesday, 08 June 2022
 -   🎓 [Certificate](./)
 
 ------------------------------------------------------------------------
 
 #### Assignments & Deliverables
 
--   [🚀 Course Project Repository
-    1](https://github.com/AndersonUyekita/exploratory-data-analysis_course-project-1)
+-   [🚀 Course Project 1
+    Repository](https://github.com/AndersonUyekita/exploratory-data-analysis_course-project-1)
 -   [📝 Quiz 1](./Week%201/quiz-1_exploratory-data-analysis.md)
--   [📝 Quiz 2](./Week%203/quiz-2_exploratory-data-analysis.md)
+-   [📝 Quiz 2](./Week%202/quiz-2_exploratory-data-analysis.md)
 -   [📝 Quiz 3](./Week%204/quiz-3_exploratory-data-analysis.md)
 
 ------------------------------------------------------------------------

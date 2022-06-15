@@ -24,7 +24,7 @@
     -   GGPlot2 Part1
     -   GGPlot2 Part2
     -   GGPlot2 Extras
--   [📝 Quiz 1](./quiz-2_exploratory-data-analysis.md)
+-   [📝 Quiz 2](./quiz-2_exploratory-data-analysis.md)
 
 ------------------------------------------------------------------------
 
@@ -34,6 +34,19 @@
     -   [Lattice Plotting System](./slides/2_1_plotting-lattice.pdf)
 -   Lesson 2: ggplot2 <a href="" id="lesson-2"></a>
     -   [ggplot2](./slides/2_2_ggplot-2.pdf)
+
+------------------------------------------------------------------------
+
+#### Description
+
+> Welcome to Week 2 of Exploratory Data Analysis. This week covers some
+> of the more advanced graphing systems available in R: the Lattice
+> system and the ggplot2 system. While the base graphics system provides
+> many important tools for visualizing data, it was part of the original
+> R system and lacks many features that may be desirable in a plotting
+> system, particularly when visualizing high dimensional data. The
+> Lattice and ggplot2 systems also simplify the laying out of plots
+> making it a much less tedious process.
 
 ------------------------------------------------------------------------
 

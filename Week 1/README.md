@@ -25,6 +25,8 @@
     -   Plotting Systems
     -   Base Plotting System
 -   [📝 Quiz 1](./quiz-1_exploratory-data-analysis.md)
+-   [🚀 Course Project 1
+    Repository](https://github.com/AndersonUyekita/exploratory-data-analysis_course-project-1)
 
 ------------------------------------------------------------------------
 
@@ -40,6 +42,14 @@
     -   [Base Plotting System](./slides/1_2_2_PlottingBase.pdf)
 -   Lesson 3: Graphics Devices <a href="" id="graphics_devices"></a>
     -   [Graphics Devices in R](./slides/1_3_GraphicsDevicesinR.pdf)
+
+------------------------------------------------------------------------
+
+#### Description
+
+> This week covers the basics of analytic graphics and the base plotting
+> system in R. We’ve also included some background material to help you
+> install R if you haven’t done so already.
 
 ------------------------------------------------------------------------
 
