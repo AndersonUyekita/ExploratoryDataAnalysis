@@ -11,8 +11,9 @@ Exploratory Data Analysis
     target="_blank" rel="noopener">Exploratory Data Analysis</a>
     -   🧑‍🏫 Instructor: Roger D Peng
     -   🚦 Start: Friday, 20 May 2022
-    -   🏁 Finish: Wednesday, 08 June 2022
--   🎓 [Certificate](./)
+    -   🏁 Finish: Monday, 20 June 2022
+-   🎓
+    [Certificate](https://www.coursera.org/account/accomplishments/certificate/ANQVGDHPFBUL)
 
 ------------------------------------------------------------------------
 
