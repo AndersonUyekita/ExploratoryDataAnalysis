@@ -21,9 +21,10 @@ Exploratory Data Analysis
 
 -   [🚀 Course Project 1
     Repository](https://github.com/AndersonUyekita/exploratory-data-analysis_course-project-1)
+-   [🚀 Course Project 2
+    Repository](https://github.com/AndersonUyekita/exploratory-data-analysis_course-project-2)
 -   [📝 Quiz 1](./Week%201/quiz-1_exploratory-data-analysis.md)
 -   [📝 Quiz 2](./Week%202/quiz-2_exploratory-data-analysis.md)
--   [📝 Quiz 3](./Week%204/quiz-3_exploratory-data-analysis.md)
 
 ------------------------------------------------------------------------
 
