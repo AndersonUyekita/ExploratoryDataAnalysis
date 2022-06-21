@@ -44,3 +44,10 @@ vignettes/*.pdf
 # Readings
 #
 # * https://linuxize.com/post/gitignore-ignoring-files-in-git/
+#
+# Find the files ignored:
+#
+# $git status --ignored
+#
+# Removing all cache folder.
+Week ?/getting_and_cleaning_data_quiz_?_cache/**
