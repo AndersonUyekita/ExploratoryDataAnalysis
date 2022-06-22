@@ -12,7 +12,7 @@ params:
   instructor: "Roger D Peng"
   week: "Reading"
   course_start: !r lubridate::ymd("2022/06/04")
-  course_finish: !r lubridate::ymd("2022/06/XX")
+  course_finish: !r lubridate::ymd("2022/06/22")
   slug: 'Week%201'
   book: 'Exploratory Data Analysis with R'
   book_url: 'https://leanpub.com/exdata'
@@ -22,6 +22,7 @@ params:
 knitr::opts_chunk$set(echo = TRUE,cache=TRUE,message=FALSE,warning=FALSE)
 library(rmarkdown)
 library(lubridate)
+library(datasets)
 ```
 
 * `r if(!knitr::is_html_output()) {sprintf(fmt = "&#x1f468;&#x1F3FB;&#x200d;&#x1f4bb; Author: %s", params$author)}`
@@ -41,101 +42,110 @@ library(lubridate)
 
 1. [Formulate your question](#formulate_your_question)
 2. [Read in your data](#read_in_your_data)
-3. Check the packaging
-4. Run `str()`
-5. Look at the top and the bottom of your data
-6. Check your “n”s
-7. Validate with at least one external data source
-8. Try the easy solution first
-9. Challenge your solution
-10. Follow up
+3. [Check the packaging](#check_the_packaging)
+4. [Run `str()`](#run_str)
+5. [Look at the top and the bottom of your data](#head_tail)
+6. [Check your “n”s](#check_your_n_s)
+7. [Validate with at least one external data source](#validate_dataset)
+8. [Try the easy solution first](#easy_first)
+9. [Challenge your solution](#challenge_your_solution)
+10. [Follow up](#follow_up)
 
-#### Formulate your question <a id="formulate_your_question" />
+#### 1. Formulate your question [](){id=formulate_your_question}
 
+It will limit the number of paths.
 
-sd
+> Which counties in the United States have the highest levels of ambient ozone pollution?
 
-sf
+#### 2. Read in your data [](){id=read_in_your_data}
 
-ds
-sd
+```r
+# Examples
+readRSD()
+read_csv()
+read.csv()
+```
 
-sf
+Defining the `col_types`:
 
-ds
-sd
+* "c" for character;
+* "n" for numeric”, and;
+* "i" for integer.
 
-sf
+```r
+# Example
+ozone <- read_csv("data/hourly_44201_2014.csv",
+                  col_types = "ccccinnccccccncnncccccc")
+```
 
-ds
-sd
+#### 3. Check the packaging [](){id=check_the_packaging} 
 
-sf
+Checking the dataset dimensions.
 
-ds
+```{r}
+# Examples
+dim(datasets::mtcars)
+nrow(datasets::mtcars)
+ncol(datasets::mtcars)
+```
 
-sd
+#### 4. Run `str()` [](){id=run_str} 
 
-sf
+Print the column type, number of observations (rows), and variables (columns).
 
-ds
-sd
+```{r}
+# Checking the data structure.
+str(datasets::mtcars)
+```
 
-sf
+#### 5. Look at the top and the bottom of your data [](){id=head_tail} 
 
-ds
-sd
+Check the first and last rows.
 
-sf
+```{r}
+# First rows
+head(datasets::mtcars)
 
-ds
-sd
+# Last rows
+tail(datasets::mtcars)
+```
 
-sf
+#### 6. Check your “n”s [](){id=check_your_n_s}
 
-ds
+Based on our knowledge of the data, it is essential to check those numbers.
 
-sd
+```{r,warning=FALSE,message=FALSE}
+# Checking the number of observations.
+dim(airquality)
 
-sf
+# Sneaking the data to find any NA value.
+summary(datasets::airquality)
+```
 
-ds
-sd
+We are trying to find any inconsistency like the max day above 31.
 
-sf
+#### 7. Validate with at least one external data source [](){id=validate_dataset}
 
-ds
-sd
+Double-checking if the current data is correct with independent data or source. Just to be sure, if you are working on the same basis and magnitude order.
 
-sf
+#### 8. Try the easy solution first [](){id=easy_first}
 
-ds
-sd
+Make it simple. You are not building a spaceship.
 
-sf
+#### 9. Challenge your solution [](){id=challenge_your_solution}
 
-ds
+Challenge your most straightforward solution. You want to invalidate it.
 
+#### 10. Follow up questions [](){id=follow_up}
 
-#### Read in your data <a id="read_in_your_data" />
+1. Do you have the right data?
 
-sd
+> Sometimes at the conclusion of an exploratory data analysis, the conclusion is that the dataset is not really appropriate for this question. In this case, the dataset seemed perfectly fine for answering the question of which counties had the highest levels of ozone.
 
-sf
+2. Do you need other data?
 
-ds
-sd
+> One sub-question we tried to address was whether the county rankings were stable across years. We addressed this by resampling the data once to see if the rankings changed, but the better way to do this would be to simply get the data for previous years and re-do the rankings.
 
-sf
+3. Do you have the right question?
 
-ds
-sd
-
-sf
-
-ds
-sd
-
-sf
-
-ds
+> In this case, it’s not clear that the question we tried to answer has immediate relevance, and the data didn’t really indicate anything to increase the question’s relevance. For example, it might have been more interesting to assess which counties were in violation of the national ambient air quality standard, because determining this could have regulatory implications. However, this is a much more complicated calculation to do, requiring data from at least 3 previous years.
